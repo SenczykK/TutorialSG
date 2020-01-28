@@ -1,13 +1,16 @@
 package com.senczyk;
 
+import java.util.Scanner;
+
 public class Maths {
 	private int x;
 	
 	public void getRangeAndCheck() {
+		Scanner in = new Scanner(System.in);
 		System.out.println("Write a start range number");
-		int startRange = Integer.parseInt(System.console().readLine());
+		int startRange = in.nextInt();
 		System.out.println("Write a end range number");
-		int endRange = Integer.parseInt(System.console().readLine());
+		int endRange = in.nextInt();
 		
 		this.checkInRange(startRange, endRange);
 	}
@@ -36,5 +39,12 @@ public class Maths {
 	public boolean isEven(int x) {
 		if( x%2 == 0) return true;
 		else return false;
+	}
+	
+	public int recurentPower(int base, int power) {
+		if(power == 0) return 1;
+		if(power>1)
+			return base*recurentPower(base, power-1);
+		else return base;
 	}
 }

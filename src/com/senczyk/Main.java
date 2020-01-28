@@ -35,7 +35,10 @@ public class Main {
 		 * print and check is it Even
 		 */
 		Maths number = new Maths();
-		number.getRangeAndCheck();
+		//number.getRangeAndCheck();
+		System.out.println(number.recurentPower(2, 2));
+		System.out.println(number.recurentPower(2, 3));
+		
 				
 	}
 }
