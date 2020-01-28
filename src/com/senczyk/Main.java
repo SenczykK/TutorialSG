@@ -16,12 +16,12 @@ public class Main {
 		 */
 		listOfEmplyee.add(new Person(24, "Kamil", "Senczyk"));
 		listOfEmplyee.add(new Person(23, "SS", "XX"));
-		
+
 		/**
-		 * in for iteration the method get a one object from list (.get() function) 
-		 * and starta method .setPersonInfo()
+		 * in for iteration the method get a one object from list (.get() function) and
+		 * starta method .setPersonInfo()
 		 */
-		for(int i=0; i<listOfEmplyee.size(); i++) {
+		for (int i = 0; i < listOfEmplyee.size(); i++) {
 			listOfEmplyee.get(i).getPersonInfo();
 		}
 		
@@ -35,8 +35,7 @@ public class Main {
 		 * print and check is it Even
 		 */
 		Maths number = new Maths();
-		number.setX(5);
-		System.out.println(number.isEven());
+		number.getRangeAndCheck();
 				
 	}
 }
